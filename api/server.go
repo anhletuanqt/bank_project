@@ -1,10 +1,10 @@
 package api
 
 import (
+	db "github.com/bank_project/db/sqlc"
 	"github.com/gin-gonic/gin"
 	"github.com/gin-gonic/gin/binding"
 	"github.com/go-playground/validator/v10"
-	db "github.com/techschool/simplebank/db/sqlc"
 )
 
 // Server serves HTTP requests for our banking service.

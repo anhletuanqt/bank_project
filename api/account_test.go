@@ -10,12 +10,12 @@ import (
 	"net/http/httptest"
 	"testing"
 
+	mockdb "github.com/bank_project/db/mock"
+	db "github.com/bank_project/db/sqlc"
+	"github.com/bank_project/util"
 	"github.com/gin-gonic/gin"
 	"github.com/golang/mock/gomock"
 	"github.com/stretchr/testify/require"
-	mockdb "github.com/techschool/simplebank/db/mock"
-	db "github.com/techschool/simplebank/db/sqlc"
-	"github.com/techschool/simplebank/util"
 )
 
 func TestGetAccountAPI(t *testing.T) {
